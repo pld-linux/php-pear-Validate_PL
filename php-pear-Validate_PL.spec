@@ -5,7 +5,7 @@
 %define		_pearname	Validate_PL
 
 Summary:	%{_pearname} - Validation class for PL
-Summary(pl.UTF-8):   %{_pearname} - Klasa sprawdzająca poprawność dla Polski
+Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Polski
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
