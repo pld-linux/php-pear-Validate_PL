@@ -5,7 +5,7 @@
 %define		_pearname	Validate_PL
 
 Summary:	%{_pearname} - Validation class for PL
-Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla Polski
+Summary(pl.UTF-8):   %{_pearname} - Klasa sprawdzajÄ…ca poprawnoÅ›Ä‡ dla Polski
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
@@ -32,8 +32,8 @@ Package containes locale validation for PL such as:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet do sprawdzania poprawno¶ci dla Polski danych takich jak:
+%description -l pl.UTF-8
+Pakiet do sprawdzania poprawnoÅ›ci dla Polski danych takich jak:
 - NIP
 - numery kont bankowych
 - PESEL
