@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - Validation class for PL
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Polski
 Name:		php-pear-%{_pearname}
-Version:	0.5.1
-Release:	2
+Version:	0.5.2
+Release:	1
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b2cd0211fcab3d3831d7d4652a59f7fe
+# Source0-md5:	eccc66ffc128a0fb3468480be93458d0
 URL:		http://pear.php.net/package/Validate_PL/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -49,6 +49,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
 
+# don't care for tests
+rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/tests/%{_pearname}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -57,3 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Validate/PL.php
+
+%{php_pear_dir}/data/%{_pearname}
